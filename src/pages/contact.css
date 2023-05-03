@@ -1,0 +1,88 @@
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.contact-content h1 {
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  margin-bottom: clamp(1rem, 6vw, 1.5rem);
+  text-align: center;
+}
+.contact-content form .input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-content form .input-box input,
+.contact-content form textarea {
+  padding: clamp(0.5rem, 4vw, 0.8rem);
+  font-size: clamp(0.7rem, 4vw, 0.9rem);
+  border: none;
+  border-radius: 8px;
+  margin-block: 0.2rem;
+}
+.contact-content form .input-box input {
+  width: clamp(15rem, 80vw, 40rem);
+  background-color: rgba(88, 88, 88, 0.1);
+}
+.contact-content form input::-webkit-outer-spin-button,
+.contact-content form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contact-content form input[type="number"] {
+  -moz-appearance: textfield;
+  border: 2px solid transparent;
+  outline: none;
+}
+.contact-content form input[type="text"],
+textarea {
+  border: 2px solid transparent;
+  outline: none;
+}
+.contact-content form textarea {
+  resize: none;
+  height: 10rem;
+  width: clamp(15rem, 80vw, 40rem);
+  background-color: rgba(88, 88, 88, 0.1);
+  border: 2px solid transparent;
+}
+.contact-content form input[type="text"]:focus,
+.contact-content form textarea:focus,
+.contact-content form input[type="number"]:focus {
+  border: 2px solid;
+}
+.contact-content form .submit-box {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.7rem;
+}
+.contact-btn {
+  height: clamp(2.4rem, 100vw, 2.8rem);
+  width: clamp(7.5rem, 45vw, 11rem);
+  font-size: clamp(0.75rem, 4vw, 0.9rem);
+  color: white;
+  background-color: rgb(19, 19, 19) !important;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.contact-btn:hover {
+  color: rgb(223, 223, 223);
+  background: #3c3535 !important;
+}
+@media only screen and (max-width: 700px) {
+  .contact {
+    padding-top: 6rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .contact-content form .submit-box {
+    justify-content: center;
+  }
+}
